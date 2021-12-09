@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="assets/styles.css">
     <title>Document</title>
 </head>
-<body>
-	<header class="navbar">
+<body>  
+    <header class="navbar"  >
         <nav class="nav-navbar">
             <h1>ME ACHA!</h1>
             <p>Encontre um endereço pelo número de CEP</p>
@@ -22,19 +22,17 @@
     <main>
         <form action="submit" id="busca-cep">
             <label for="CEP">CEP</label>
-            <input type="text" name="CEP" id="CEP"><br>
+            <input type="text" name="cep" id="cep" onblur="pesquisacep(this.value);"><br>               
             <label for="rua">Rua</label>
-            <input type="text" name="rua" id="rua"><br>
+            <input type="text" name="rua" id="rua" disabled><br>
             <label for="bairro">Bairro</label>
-            <input type="text" name="bairro" id="bairro"><br>
+            <input type="text" name="bairro" id="bairro" disabled><br>
             <label for="cidade">Cidade</label>
-            <input type="text" name="cidade" id="cidade"><br>
+            <input type="text" name="cidade" id="cidade" disabled><br>
             <label for="estado">Estado</label>
-            <input type="text" name="estado" id="estado"><br>
-            <button type="" id="buscar">Buscar</button>
+            <input type="text" name="uf" id="uf" disabled><br>
         </form>
     </main>
-
-    <script src="index.js"></script>
-	</body>
+</body>
+<script src="index.js"></script>
 </html>
